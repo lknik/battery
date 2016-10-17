@@ -738,16 +738,16 @@ table.exceptions table {
       </span></h2><p><em>This section is non-normative.</em></p>
       <p>
         The API defined in this specification is used to determine the battery
-        status of the hosting device.
+        status of the hosting device. The information provided by Battery API may possibly be used in profiling the 
+        user via analysis of device use patterns and potentially to track users on the Web.
+
       </p>
       <p>
         The user agent <em class="rfc2119" title="SHOULD">SHOULD</em> not expose high precision readouts of battery
         status information as that can introduce a new fingerprinting vector.
       </p>
       <p>
-        The user agent <em class="rfc2119" title="MAY">MAY</em> ask the user for battery status information access,
-        or alternatively, enforce the user permission requirement in its
-        private browsing modes.
+        The user agent <em class="rfc2119" title="SHOULD">SHOULD</em> be subject to permissions.
       </p>
       <p>
         The user agent <em class="rfc2119" title="SHOULD">SHOULD</em> inform the user of the API use by scripts in an
